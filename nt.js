@@ -5,7 +5,7 @@
 // @downloadURL https://github.com/alex-s-m/test/raw/master/nt.js
 // @connect *://new-team.org/*
 // @trackerURL http://new-team.org/
-// @version 0.0.1
+// @version 0.0.2
 // @require exKit
 // ==/UserScript==
 
