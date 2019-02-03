@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           test hashvault.pro
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@updateURL 		https://github.com/octocat/Spoon-Knife/my-style.user.css
+
+@preprocessor stylus
+
+@var checkbox   fontMonospace   "Font monospace" 1
+@var color      backgroundColor "Background color"  #385c8eba
+@var range      tab-max-Width1  "tab-max-Width1"    [35, 25, 50, 5, "%"]
+@var range      tabWidth2       "min-width2"        [99, 10, 99, 1, "%"]
+
+==/UserStyle==*/
+@-moz-document domain("hashvault.pro") {
+	/* Место для CSS кода... */
+	.xx-paymentstats__item {
+		background: backgroundColor;
+	}
+
+	if fontMonospace {
+		td.md-cell.ng-binding {
+			font-family: monospace !important;
+		}
+	}
+
+	.flex-60,
+	.layout-row > .flex-60 {
+		max-width: tabWidth2 !important;
+	}
+
+	#content > div.ng-scope.layout-xs-column.layout-sm-column.layout-md-column.layout-row.flex > md-card > md-card-content:nth-child(3) > div > div:nth-child(1) {
+		max-width: tab-max-Width1 !important;
+	}
+
+	/* авторизация настройки */
+	.md-dialog-container md-dialog {
+		min-width: 85% !important;
+	}
+	table.md-table:not(.md-row-select) td.md-cell:first-child,
+	table.md-table:not(.md-row-select) th.md-column:first-child {
+		line-height: 24px !important;
+	}
+}
