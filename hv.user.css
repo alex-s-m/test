@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           test hashvault.pro
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    A new userstyle
 @author         Me
 @updateURL 	https://alex-s-m.github.io/test/hv.user.css
@@ -11,11 +11,17 @@
 @var color      backgroundColor "Background color"  #385c8eba
 @var range      tab-max-Width1  "tab-max-Width1"    [35, 25, 50, 5, "%"]
 @var range      tabWidth2       "min-width2"        [99, 10, 99, 1, "%"]
+@var range      md-dialog       "авторизация настройки"   [85, 10, 85, 1, "%"]
 
 ==/UserStyle==*/
 @-moz-document domain("hashvault.pro") {
 	/* Место для CSS кода... */
-	.xx-paymentstats__item {
+
+table.md-table.md-row-select tr.md-row:nth-child(odd), table.md-table tr.md-row:nth-child(odd) {
+    background-color: backgroundColor;
+}
+	
+.xx-paymentstats__item {
 		background: backgroundColor;
 	}
 
@@ -36,7 +42,7 @@
 
 	/* авторизация настройки */
 	.md-dialog-container md-dialog {
-		min-width: 85% !important;
+		min-width: md-dialog !important;
 	}
 	table.md-table:not(.md-row-select) td.md-cell:first-child,
 	table.md-table:not(.md-row-select) th.md-column:first-child {
