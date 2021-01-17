@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           galaxyonline.io
+@namespace      github.com/openstyles/stylus
+@version        1.0.1
+@description    A new userstyle
+@author         Me
+@preprocessor stylus
+
+
+@var checkbox   InfoOS       "не показывать InfoOS" 1
+@var checkbox   TablePlanets "не показывать таблицы" 1
+
+==/UserStyle== */
+@-moz-document domain("galaxyonline.io") {
+/* Место для CSS кода... */
+if InfoOS {
+	.show.fade.modal.mothership > .modal-xl.modal-dialog > .modal-content > div.modal-body > .row {
+		display: none !important
+	}
+}
+if TablePlanets {
+	div.planet-4.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10,
+	div.planet-4.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
+	div.planet-5.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
+	div.planet-5.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10 {
+		display: none !important
+	}
+}
+}
