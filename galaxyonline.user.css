@@ -1,12 +1,11 @@
 /* ==UserStyle==
-@name           galaxyonline.io
-@namespace      github.com/openstyles/stylus
-@version        1.0.2
-@description    A new userstyle
-@author         Me
-@updateURL 	https://alex-s-m.github.io/test/galaxyonline.user.css
-@preprocessor stylus
-
+@name		galaxyonline.io
+@namespace	github.com/openstyles/stylus
+@version	1.0.2
+@description	A new userstyle
+@author		Me
+@updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
+@preprocessor	stylus
 
 @var checkbox   InfoOS       "не показывать InfoOS" 1
 @var checkbox   TablePlanets "не показывать таблицы" 1
