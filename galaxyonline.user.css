@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.2
+@version	1.0.3
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
@@ -9,6 +9,9 @@
 
 @var checkbox   InfoOS       "не показывать InfoOS" 1
 @var checkbox   TablePlanets "не показывать таблицы" 1
+@var checkbox   ButonPlanets "не показывать кнопки" 1
+@var checkbox   ButonsOnly   "не показывать кнопки" 1
+
 
 ==/UserStyle== */
 @-moz-document domain("galaxyonline.io") {
@@ -20,10 +23,34 @@ if InfoOS {
 }
 if TablePlanets {
 	div.planet-4.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10,
-	div.planet-4.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
-	div.planet-5.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
 	div.planet-5.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10 {
 		display: none !important
 	}
 }
+if ButonPlanets {
+	div.planet-4.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
+	div.planet-5.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
+{
+		display: none !important
+	}
+}
+
+if ButonsOnly {
+.mb-auto~div,
+a#move_popup_ships_to_os,      
+a#update_all_buildings,
+#hyperjump_to_planet
+{
+		display: none !important
+	}
+}
+
+
+
+
+.col-lg-2 {
+    /* flex: 0 0 16.6666666667%; */
+    /* max-width: 16.6666666667%; */
+}
+
 }
