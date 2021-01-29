@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.4
+@version	1.0.5
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
@@ -41,12 +41,10 @@ if ButonsOnly {
 	#hyperjump_to_planet {
 		display: none !important
 	}
-}
-
-
-.col-lg-2 {
-	/* flex: 0 0 16.6666666667%; */
-	/* max-width: 16.6666666667%; */
+	.col-lg-2 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}	
 }
 
 
