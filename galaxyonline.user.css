@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.6
+@version	1.0.7
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
@@ -11,6 +11,7 @@
 @var checkbox   TablePlanets "не показывать таблицы" 1
 @var checkbox   ButonPlanets "не показывать кнопки" 1
 @var checkbox   ButonsOnly   "не показывать кнопки" 1
+@var checkbox   StarMaps     "исправить карту" 1
 
 ==/UserStyle== */
 @-moz-document domain("galaxyonline.io") {
@@ -47,6 +48,22 @@ if ButonsOnly {
 	}	
 }
 
+if StarMaps {
+	
+.starmap .leaflet-icon-object.hostile {
+    border: 4px dotted rgba(248, 70, 70, 0.7) !important;
+}
+.starmap .leaflet-icon-object.friendly {
+    border: 4px dotted rgba(41, 188, 148, 0.7) !important;
+}
 
+.starmap .leaflet-icon-object.capital {
+    border: 4px dotted rgba(235, 178, 55, 0.7) !important;
+}
+
+.starmap .leaflet-icon-object.current {
+    border: 4px dotted rgba(65, 131, 215, 0.7) !important;
+}
+	}
 
 }
