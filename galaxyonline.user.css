@@ -1,16 +1,14 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.9
+@version	1.0.991
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
 @preprocessor	stylus
 
 @var checkbox   InfoOS       "не показывать InfoOS" 1
-@var checkbox   TablePlanets "не показывать таблицы" 1
-@var checkbox   ButonPlanets "не показывать кнопки" 1
-@var checkbox   ButonsOnly   "только [Ресурсы на ОС]" 1
+@var checkbox   TablePlanets "не показывать таблицы и кнопки" 1
 @var checkbox   StarMaps     "исправить карту" 1
 
 ==/UserStyle== */
@@ -22,48 +20,42 @@ if InfoOS {
 	}
 }
 if TablePlanets {
-	#myplanets_continer > div> div > div.col-lg-10.col-12.pt-lg-0.pt-3.text-center,
-	{
-		display: none !important
-	}
-}
-if ButonPlanets {
-	div.planet-4.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
-	div.planet-5.separator.modal-body.myplanets-summary > .row > .gx-flex-height.text-center.pt-2.pt-lg-0.pl-lg-0.col-12.col-lg-2,
-	{
-		display: none !important
-	}
-}
+	#myplanets_continer > div > div > div.col-lg-10.col-12.pt-lg-0.pt-3.text-center,
 
-if ButonsOnly {
+ 	#move_popup_ships_to_os, 
+	#update_all_buildings,
+	#hyperjump_to_planet,
+
 	.mb-auto ~ div,
-	a#move_popup_ships_to_os,
-	a#update_all_buildings,
-	#hyperjump_to_planet {
+	.mb-auto ~ div ~ button
+	{
 		display: none !important
 	}
-	.col-lg-2.col-12.pl-lg-0 {
-		flex: 0 0 100%;
-		max-width: 100%;
-	}	
-}
-
-if StarMaps {
-	
-.starmap .leaflet-icon-object.hostile {
-    border: 4px dotted rgba(248, 70, 70, 0.7) !important;
-}
-.starmap .leaflet-icon-object.friendly {
-    border: 4px dotted rgba(41, 188, 148, 0.7) !important;
-}
-
-.starmap .leaflet-icon-object.capital {
-    border: 4px dotted rgba(235, 178, 55, 0.7) !important;
-}
-
-.starmap .leaflet-icon-object.current {
-    border: 4px dotted rgba(65, 131, 215, 0.7) !important;
-}
+	.gx-flex-height {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		display: block !important
 	}
+}
+
+
+
+if StarMaps{
+	.starmap .leaflet-icon-object.hostile {
+		border: 4px dotted rgba(248, 70, 70, 0.7) !important;
+	}
+	.starmap .leaflet-icon-object.friendly {
+		border: 4px dotted rgba(41, 188, 148, 0.7) !important;
+	}
+
+	.starmap .leaflet-icon-object.capital {
+		border: 4px dotted rgba(235, 178, 55, 0.7) !important;
+	}
+
+	.starmap .leaflet-icon-object.current {
+		border: 4px dotted rgba(65, 131, 215, 0.7) !important;
+	}
+}
+
 
 }
