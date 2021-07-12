@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.8
+@version	1.0.9
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
@@ -23,8 +23,7 @@ if InfoOS {
 }
 if TablePlanets {
 	#myplanets_continer > div> div > div.col-lg-10.col-12.pt-lg-0.pt-3.text-center,
-	div.planet-4.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10,
-	div.planet-5.separator.modal-body.myplanets-summary > .row > .text-center.pt-3.pt-lg-0.col-12.col-lg-10 {
+	{
 		display: none !important
 	}
 }
