@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		galaxyonline.io
 @namespace	github.com/openstyles/stylus
-@version	1.0.991
+@version	1.03.06.22
 @description	A new userstyle
 @author		Me
 @updateURL	https://alex-s-m.github.io/test/galaxyonline.user.css
@@ -57,5 +57,8 @@ if StarMaps{
 	}
 }
 
-
+body .select2-container .select2-dropdown .select2-results .select2-results__options {
+    max-height: 500px;
+}
+	
 }
